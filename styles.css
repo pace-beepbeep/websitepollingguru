@@ -1,0 +1,58 @@
+/* Import Font */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Membuat lebar konten tidak terlalu besar di monitor */
+#questionnaire-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling untuk Kotak Pembukaan */
+.introduction-box {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #0088ff;
+}
+
+/* Gaya Baru untuk Kartu Pertanyaan dengan bayangan berlapis */
+.card-layered-shadow {
+  box-shadow: none;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+  /* INI ADALAH KODE UTAMA UNTUK EFEK BAYANGAN */
+  box-shadow: 10px 10px 0px 0px rgba(0, 12, 184, 0.685);
+}
+
+/* Efek Interaktif saat mouse menyentuh kartu */
+.card-layered-shadow:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px 0px 0px rgba(0, 12, 184, 0.685);
+}
+
+/* Styling untuk Button Submit */
+.btn-primary {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Styling untuk Hasil Akhir */
+#result-container {
+  border-top: 5px solid #0d6efd;
+  transition: all 0.5s ease-in-out;
+}
+
+#score-display {
+  font-size: 5rem;
+}
